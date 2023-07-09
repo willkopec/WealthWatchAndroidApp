@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="General">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_finances"
+                    android:icon="@drawable/ic_money_24"
+                    android:title="Finances" />
+                <item
+                    android:id="@+id/nav_investments"
+                    android:icon="@drawable/baseline_candlestick_chart_24"
+                    android:title="Investments" />
+            </group>
+        </menu>
+
+    </item>
+
+
+    <item android:title="Investing Tools">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_stock_screener"
+                    android:icon="@drawable/baseline_query_stats_24"
+                    android:title="Stock Screener" />
+                <item
+                    android:id="@+id/nav_market_news"
+                    android:icon="@drawable/baseline_newspaper_24"
+                    android:title="Market News" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Other Tools">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_calculators"
+                    android:icon="@drawable/baseline_calculate_24"
+                    android:title="Calculators"
+                />
+            </group>
+        </menu>
+
+    </item>
+
+</menu>

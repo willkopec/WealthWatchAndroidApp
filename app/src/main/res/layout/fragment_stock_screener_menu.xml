@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockScreenerMenuFragment">
+
+
+    <TextView
+        android:id="@+id/stockScreenerTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Screener:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exchangeSpinnerTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exchange:"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/screenerExchangeSpinner"
+        app:layout_constraintTop_toTopOf="@id/screenerExchangeSpinner" />
+
+    <TextView
+        android:id="@+id/marketCapSpinnerTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Market Cap:"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/screenerMarketCapSpinner"
+        app:layout_constraintTop_toTopOf="@id/screenerMarketCapSpinner"/>
+
+    <TextView
+        android:id="@+id/priceSpinnerTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/screenerPriceSpinner"
+        app:layout_constraintTop_toTopOf="@id/screenerPriceSpinner"/>
+
+    <TextView
+        android:id="@+id/sectorSpinnerTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sector:"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/screenerSectorSpinner"
+        app:layout_constraintTop_toTopOf="@id/screenerSectorSpinner"/>
+
+    <TextView
+        android:id="@+id/avgVolumeSpinnerTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Vol:"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/screenerAvgVolumeSpinner"
+        app:layout_constraintTop_toTopOf="@id/screenerAvgVolumeSpinner"/>
+
+    <TextView
+        android:id="@+id/patternTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pattern:"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/screenerPatternSpinner"
+        app:layout_constraintTop_toTopOf="@id/screenerPatternSpinner"/>
+
+    <TextView
+        android:id="@+id/countryTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country:"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/screenerCountrySpinner"
+        app:layout_constraintTop_toTopOf="@id/screenerCountrySpinner"/>
+
+    <Spinner
+        android:id="@+id/screenerExchangeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:minWidth="190dp"
+        android:background="@color/black"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stockScreenerTitleText"/>
+
+    <Spinner
+        android:id="@+id/screenerMarketCapSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minWidth="190dp"
+        android:background="@color/black"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screenerExchangeSpinner"/>
+
+    <Spinner
+        android:id="@+id/screenerPriceSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minWidth="190dp"
+        android:background="@color/black"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screenerMarketCapSpinner"/>
+
+    <Spinner
+        android:id="@+id/screenerSectorSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minWidth="190dp"
+        android:background="@color/black"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screenerPriceSpinner"/>
+
+    <Spinner
+        android:id="@+id/screenerAvgVolumeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minWidth="190dp"
+        android:background="@color/black"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screenerSectorSpinner"/>
+
+    <Spinner
+        android:id="@+id/screenerPatternSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minWidth="190dp"
+        android:background="@color/black"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screenerAvgVolumeSpinner"/>
+
+    <Spinner
+        android:id="@+id/screenerCountrySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minWidth="190dp"
+        android:background="@color/black"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screenerPatternSpinner"/>
+
+    <Button
+        android:id="@+id/screenStocksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ECE5C7"
+        android:backgroundTint="#00668b"
+        android:layout_marginTop="15dp"
+        android:text="Screen Stocks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screenerCountrySpinner" />
+
+    <TextView
+        android:id="@+id/stockScreenProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screenStocksButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

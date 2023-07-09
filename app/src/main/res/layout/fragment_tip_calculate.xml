@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2DEDC"
+    tools:context=".TipCalculateActivity">
+
+    <TextView
+        android:id="@+id/interestFragmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip Calculator"
+        android:textColor="#116A7B"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <EditText
+        android:id="@+id/billTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:background="#ECE5C7"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:ems="10"
+        android:hint="($)"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interestFragmentTitle" />
+
+    <EditText
+        android:id="@+id/percentageTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#ECE5C7"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:ems="10"
+        android:hint="(%)"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/billTotal"
+        app:layout_constraintTop_toBottomOf="@+id/billTotal" />
+
+    <EditText
+        android:id="@+id/tipSplit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        android:background="#ECE5C7"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:ems="10"
+        android:hint="(# of People) Default:1"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/percentageTip"
+        app:layout_constraintTop_toBottomOf="@+id/percentageTip" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill Total ($):"
+        android:textColor="#116A7B"
+        app:layout_constraintBaseline_toBaselineOf="@+id/billTotal"
+        app:layout_constraintEnd_toStartOf="@+id/billTotal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Percentage Tip:"
+        android:textColor="#116A7B"
+        app:layout_constraintEnd_toStartOf="@+id/percentageTip"
+        app:layout_constraintTop_toTopOf="@+id/percentageTip" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip Split:"
+        android:textColor="#116A7B"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tipSplit"
+        app:layout_constraintEnd_toStartOf="@+id/tipSplit" />
+
+    <Button
+        android:id="@+id/calculateTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Calculate Tip"
+        android:textColor="#ECE5C7"
+        android:backgroundTint="#00668b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipSplit" />
+
+    <Button
+        android:id="@+id/calculateInterestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Round Tip Up"
+        android:textColor="#ECE5C7"
+        android:backgroundTint="#00668b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateTipButton" />
+
+    <ImageView
+        android:id="@+id/roundUpTipHelper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        app:layout_constraintStart_toEndOf="@+id/calculateInterestButton"
+        app:layout_constraintTop_toTopOf="@+id/calculateInterestButton"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        android:contentDescription="Rounds tip up to nearest Dollar amount"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
