@@ -15,6 +15,23 @@
         >
 
         <TextView
+            android:id="@+id/currentBalanceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Account Holdings : $~"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Hello, User!"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
             android:id="@+id/loginToExchangeText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

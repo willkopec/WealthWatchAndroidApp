@@ -55,6 +55,7 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.8'
     implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
     implementation 'com.github.crazzyghost:alphavantage-java:1.6.2'
+    implementation 'com.google.code.gson:gson:2.10.1'
     implementation 'org.jsoup:jsoup:1.16.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

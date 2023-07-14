@@ -7,6 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,13 +32,24 @@ import java.util.jar.JarException;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    public static final String MyPrefs = "MyPrefs" ;
     private DrawerLayout drawer;
     private NavigationView navigationView;
+    SharedPreferences sessionInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        sessionInfo = getSharedPreferences(MyPrefs, Context.MODE_PRIVATE);
+
+        if(sessionInfo.getString("pythonSession", "") == ""){
+            System.out.println("NO LOGIN SESSION FOUND");
+        } else {
+            System.out.println("User session is still active!");
+            //sessionInfo.edit().clear().commit();
+        }
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

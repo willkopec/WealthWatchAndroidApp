@@ -22,8 +22,7 @@ public class FinancesFragment extends Fragment {
         robinHoodApiFragment = new FinanceChartFragment();
 
         getActivity().getSupportFragmentManager().beginTransaction()
-                .replace(R.id.accountBalanceContainer, accountBalanceFragment)
-                .replace(R.id.financeChartAndLogin, robinHoodApiFragment)
+                .replace(R.id.accountBalanceContainer, robinHoodApiFragment)
                 .commit();
 
 
