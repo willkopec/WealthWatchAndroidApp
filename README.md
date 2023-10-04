@@ -1,6 +1,14 @@
 ## WealthWatchAndroidApp
 This is a multi-purpose FinTech Android mobile application which includes a lot of tools and utilities such as a Wealth Tracker, Tip Calculator, Compounding Interest Calculator, Market News, and Stock Screener! This project is currently in a very early build stage and I plan to integrate a lot more tools to help people manage their wealth.
 
+### Current Features:
+### --------------
+#### - An exchange login API with Account Holdings tracking
+#### - A stock screener using FinViz to retrieve a list of stocks based on user specified conditions
+#### - Overall Market news (Includes Crypto, Technology, Real Estate, Economy, and All sections)
+#### - A tip calculator which calculates a tip which can be split between multiple people based on the Bill's total
+#### - A compounding interest calculator
+
 ### Future Plans:
 ### --------------
 #### - Add more exchanges to track trades/balances via their APIs
