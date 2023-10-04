@@ -22,4 +22,20 @@ This is a multi-purpose FinTech Android mobile application which includes a lot 
 
 ### Images:
 ### --------
-## (Coming Soon!)
+![wealthwatch pic8](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/26c87169-4462-45cd-8ae6-febc374c4310)
+
+![wealthwatch pic7](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/e419eac9-7e7a-4b7a-a025-04453c7f0f2f)
+
+![wealthwatch pic6](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/ee7ea288-1555-440e-b721-47b734f6488e)
+
+![wealthwatch pic5](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/0308c175-e99e-44bf-b7c5-77e284710c37)
+
+![wealthwatch pic2](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/3001c91a-10b5-4527-bb09-b91c93a9d44c)
+
+![wealthwatch pic4](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/19d17ab6-cd13-407d-b3d5-82e263823655)
+
+![wealthwatch pic3](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/686db38d-e5be-4465-9b6a-e513773b6bb9)
+
+![wealthwatch pic1](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/9f4b39c2-f096-4bbe-862e-4744832b1c01)
+
+![wealthwatch pic0](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/0778bc85-4414-4add-b49d-f0df657ec646)
