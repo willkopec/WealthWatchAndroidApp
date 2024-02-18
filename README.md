@@ -1,49 +1,54 @@
-## WealthWatchAndroidApp
-This is a multi-purpose FinTech Android mobile application which includes a lot of tools and utilities such as a Wealth Tracker, Tip Calculator, Compounding Interest Calculator, Market News, and Stock Screener! This project is currently in a very early build stage and I plan to integrate a lot more tools to help people manage their wealth.
+# News App
 
-### Current Features:
-### --------------
-#### - An exchange login API with Account Holdings tracking
-#### - A stock screener using FinViz to retrieve a list of stocks based on user specified conditions
-#### - Overall Market news (Includes Crypto, Technology, Real Estate, Economy, and All sections)
-#### - A tip calculator which calculates a tip which can be split between multiple people based on the Bill's total
-#### - A compounding interest calculator
+Welcome to the News App! This Android application provides a seamless experience for staying updated with the latest news across various categories. Written in Kotlin and following the MVVM architecture pattern, it offers a modern and efficient approach to news consumption.
 
-### Future Plans:
-### --------------
-#### - Add more exchanges to track trades/balances via their APIs
-#### - Fully functional trading bot for specific strategies (Must be tested in a Paper trading simulation)
-#### - More options on the stock screener
-#### - Options contract price calculator
-#### - Add a subscription tracker/manager
-#### - (More soon)...
+## Features
+
+- **Category-based News:** Explore news articles across different categories including Breaking, Economic, Sports, and more, providing comprehensive coverage of various topics.
+- **Save Articles:** Save your favorite news articles for later reference, ensuring you never miss important updates.
+- **Search Functionality:** Easily search for news articles using keywords, making it convenient to find specific information.
+  
+## Technologies Used
+
+The News App leverages several technologies and libraries to enhance performance and user experience:
+
+- **Room:** For local database storage, facilitating seamless article saving and retrieval.
+- **Dagger Hilt:** Used for dependency injection, ensuring modular and maintainable code.
+- **Retrofit:** For handling network requests, enabling smooth communication with news APIs.
+- **Compose:** Utilized for building the user interface with modern and declarative UI components.
+- **Coroutines:** For asynchronous programming, enabling efficient handling of long-running tasks such as network requests.
+- **Moshi:** For JSON parsing, simplifying the process of converting JSON data into Kotlin objects.
+- **Coil:** Used for image loading and caching, enhancing performance and optimizing network bandwidth.
+- **Timber:** For logging purposes, aiding in debugging and monitoring application behavior.
+
+## Installation
+
+To run the News App locally, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Open the project in Android Studio.
+3. Build and run the application on an Android emulator or a physical device.
+
+## Getting Started
+
+Once the News App is installed and running, you can:
+
+- Browse news articles by selecting different categories.
+- Save articles by tapping on the bookmark icon.
+- Use the search functionality to find articles based on keywords.
+
+## Feedback
+
+We welcome any feedback or suggestions for improving the News App. Feel free to leave feedback or suggestions on what could be better in the issues
+
+## Images
 
 
-### Privacy:
-### ----------
-#### This application currently only supports RobinHood as a investment tracking option. We do not store any login information, we use Robin-Stocks API to login to the exchange and create/store the session token of that login for 24 hours so that you don't have to login every time you restart the application. Read more about Robin-Stocks API here: https://robin-stocks.readthedocs.io/en/latest/
 
-### FAQs:
-### --------
-#### Is robin-stocks API safe to use?
-##### If you search this question on Google, the results will show: "The python package robin-stocks was scanned for known vulnerabilities and missing license, and no issues were found. Thus the package was deemed as safe to use". This API is the most widely used for RobinHood and commonly used to track balances or trade with a trading bot. If you would like to delete previous stored sessions, you may do so in the Privacy > Devices section on the RobinHood mobile app.
-
-### Images:
-### --------
-![wealthwatch pic8](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/26c87169-4462-45cd-8ae6-febc374c4310)
-
-![wealthwatch pic7](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/e419eac9-7e7a-4b7a-a025-04453c7f0f2f)
-
-![wealthwatch pic6](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/ee7ea288-1555-440e-b721-47b734f6488e)
-
-![wealthwatch pic5](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/0308c175-e99e-44bf-b7c5-77e284710c37)
-
-![wealthwatch pic2](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/3001c91a-10b5-4527-bb09-b91c93a9d44c)
-
-![wealthwatch pic4](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/19d17ab6-cd13-407d-b3d5-82e263823655)
-
-![wealthwatch pic3](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/686db38d-e5be-4465-9b6a-e513773b6bb9)
-
-![wealthwatch pic1](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/9f4b39c2-f096-4bbe-862e-4744832b1c01)
-
-![wealthwatch pic0](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/0778bc85-4414-4add-b49d-f0df657ec646)
+![github1](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/b7037136-e6e6-43f4-86c4-064a856ee56c)
+![github2](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/9d2161dd-44e4-4e23-98c6-bfce3a076d74)
+![github3](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/a4548467-cedc-4a0d-b683-89f59921f86a)
+![github4](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/889f013f-f6c4-4543-a634-199316c4995c)
+![github7](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/088507fc-1352-43b7-aa6c-8f80e1f3b52e)
+![github5](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/d1ec9468-e069-4c2a-a562-63393c201ddb)
+![github6](https://github.com/willkopec/WealthWatchAndroidApp/assets/85149000/325f0b25-cc5c-4aee-bcfb-46136f0e953c)
